@@ -23,6 +23,10 @@ var person = {
         console.log(this.name + "is thinking...");
         setTimeout(()=> console.log(this.name + "!"), 1000); 
     }
-}
+};
+
+//prints "Hodor is thinking...
+// prints `Hodor` 100ms later
+
 
 person.saySomething();
