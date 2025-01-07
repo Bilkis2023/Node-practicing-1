@@ -44,10 +44,10 @@ var filter = (arr, cb)=> {
  return result;
 } ;
 
-var evenNumbers = filter(numbers, currentElement => currentElement %2 ===0);
+var evenNumbers = filter(numbers, currentElement => currentElement %2 === 0);
 
-// 
+// Prints `[2, 4, 6, 8, 10]`
 console.log(evenNumbers);
 
-// 
+// Note: the original numbers in array is unchanged
 console.log(numbers);
