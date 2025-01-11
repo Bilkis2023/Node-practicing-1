@@ -54,9 +54,19 @@ console.log(beatles);  //prints ["John", "Paul", "Ringo", "George"];
 // console.log(x);
 
 // 6.When using while loops, any values we are creating inside, it's exist outside of the `while-loop` block
-var count = 0;
-while(count<5){
-var tripled = count*3;
-count++
+// var count = 0;
+// while(count<5){
+// var tripled = count*3;
+// count++
+// }
+// console.log(tripled); //Prints 12;
+
+// 7.When using `let`, values defined the loop but don't exist outside of the `While-loop`
+let c = 0;
+
+while (c<5) {
+let quadrupled = c*4;
+c++;
 }
-console.log(tripled); //Prints 12;
+
+console.log(quadrupled);  //RefrenceError: quadrupled is not defined
