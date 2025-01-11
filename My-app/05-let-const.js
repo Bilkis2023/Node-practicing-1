@@ -36,12 +36,33 @@
 // console.log(beatles);  //prints ["John", "Paul", "Ringo", "George"];
 
 // 4.b.  
-const person = { name:"Brianna", age: 11};  
-person.age++;
-person.favoriteMovie = "Matilda";
-person.name = "Anna";
+// const person = { name:"Brianna", age: 11};  
+// person.age++;
+// person.favoriteMovie = "Matilda";
+// person.name = "Anna";
 
-console.log(person); //prints `{ name: 'Anna', age: 12, favoriteMovie: 'Matilda' }`
+// console.log(person); //prints `{ name: 'Anna', age: 12, favoriteMovie: 'Matilda' }`
+
+
+// 4.c
+// When we are using `const` then we can MODIFY array and objects but can not reassign them:
+
+const item = {
+    id: 25,
+    title: "Underwater Basket-Weaving DVD",
+    price: "$20.99"
+};
+item.title = "Underwater Basket-Weaving Cloths, Foods",
+item.price = "$1.99";
+console.log(item);
+
+//  item = {
+//     id : 12,
+//     title : "Underwater Basket-Weaving Cloths, Foods",
+//     price : "$140.00",
+// };  //TypeErroe: Assignment to constant variable.
+
+
 
 
 
