@@ -47,14 +47,33 @@
 // 4.c
 // When we are using `const` then we can MODIFY array and objects but can not reassign them:
 
-const item = {
-    id: 25,
-    title: "Underwater Basket-Weaving DVD",
-    price: "$20.99"
-};
-item.title = "Underwater Basket-Weaving Cloths, Foods",
-item.price = "$1.99";
-console.log(item);
+// const item = {
+//     id: 25,
+//     title: "Underwater Basket-Weaving DVD",
+//     price: "$20.99"
+// };
+// item.title = "Underwater Basket-Weaving Cloths, Foods",
+// item.price = "$1.99";
+// console.log(item);
+
+// 4.d
+// Same rule apply to arraya, we can MODIFY them but not completlty reassign them
+
+const ninjaTurtles = [];
+ninjaTurtles.push("Bilkis", "Michaelangle");
+console.log(ninjaTurtles);
+
+// ninjaTurtles = [
+//      "Jcobe",
+//     "Michaelangle",
+//     "Leonardo",
+//     "Bilkis",
+//     "Naher",
+//     "Dior"
+// ];
+
+
+
 
 //  item = {
 //     id : 12,
