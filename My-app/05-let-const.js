@@ -1,19 +1,19 @@
 // 1. When writing conditions, values, defined inside the conditional block exist outside of it
 
-if(true){
- var favouriteColor = "red";
-}
+// if(true){
+//  var favouriteColor = "red";
+// }
 
-console.log(favouriteColor);  // prints `red`
+// console.log(favouriteColor);  // prints `red`
 
 // 2. When using let, values defined inside of conditional block. Don't exsit outside
-let favouriteFood;
-if(true){
-favouriteFood = "pizza";
-}
+// let favouriteFood;
+// if(true){
+// favouriteFood = "pizza";
+// }
 
 // This works since favourite color is not defined inside of block
-console.log(favouriteFood);
+// console.log(favouriteFood);
 // prints pizza.
 
 //
@@ -30,10 +30,20 @@ console.log(favouriteFood);
 
 // 4. const doesn't mean `const variable` . instant means `constant reference`
 // Unlike primitive data types, objects and arrays are passed by reference, rather than value
-const beatles = ["John", "Paul", "Ringo"];
-beatles.push("George");
+// const beatles = ["John", "Paul", "Ringo"];
+// beatles.push("George");
 // This works because by updating an array's contents, we are changing the reference to the underlying array
-console.log(beatles);  //prints ["John", "Paul", "Ringo", "George"];
+// console.log(beatles);  //prints ["John", "Paul", "Ringo", "George"];
+
+// 4.b.  
+const person = { name:"Brianna", age: 11};  
+person.age++;
+person.favoriteMovie = "Matilda";
+person.name = "Anna";
+
+console.log(person); //prints `{ name: 'Anna', age: 12, favoriteMovie: 'Matilda' }`
+
+
 
 //  5. When using var; our counter exists after a for-loop is done; 
 // for(var i = 0; i< 5; i++){
@@ -62,11 +72,11 @@ console.log(beatles);  //prints ["John", "Paul", "Ringo", "George"];
 // console.log(tripled); //Prints 12;
 
 // 7.When using `let`, values defined the loop but don't exist outside of the `While-loop`
-let c = 0;
+// let c = 0;
 
-while (c<5) {
-let quadrupled = c*4;
-c++;
-}
+// while (c<5) {
+// let quadrupled = c*4;
+// c++;
+// }
 
-console.log(quadrupled);  //RefrenceError: quadrupled is not defined
+// console.log(quadrupled);  //RefrenceError: quadrupled is not defined
