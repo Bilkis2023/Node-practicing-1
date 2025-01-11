@@ -36,22 +36,22 @@ beatles.push("George");
 console.log(beatles);  //prints ["John", "Paul", "Ringo", "George"];
 
 //  5. When using var; our counter exists after a for-loop is done; 
-for(var i = 0; i< 5; i++){
-console.log(i);  //Prints 5
-}
-console.log(i);
+// for(var i = 0; i< 5; i++){
+// console.log(i);  //Prints 5
+// }
+// console.log(i);
 
 // When using let, our counter is not defined outside of the `for loop` block
 // let j = 5;
-let x = 42;
-for(let j = 0; j < 5; j++){
-console.log(j);
-console.log(x);
-}
+// let x = 42;
+// for(let j = 0; j < 5; j++){
+// console.log(j);
+// console.log(x);
+// }
 // `j` is not declared on the top, like `x` .
 // That's why it is undefined.
-console.log(j);
-console.log(x);
+// console.log(j);
+// console.log(x);
 
 // 6.When using while loops, any values we are creating inside, it's exist outside of the `while-loop` block
 var count = 0;
