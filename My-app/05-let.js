@@ -52,3 +52,11 @@ console.log(x);
 // That's why it is undefined.
 console.log(j);
 console.log(x);
+
+// 6.When using while loops, any values we are creating inside, it's exist outside of the `while-loop` block
+var count = 0;
+while(count<5){
+var tripled = count*3;
+count++
+}
+console.log(tripled); //Prints 12;
